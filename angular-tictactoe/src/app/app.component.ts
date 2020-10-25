@@ -51,7 +51,7 @@ export class AppComponent {
       .filter(position => this.state.positions[position] === this.player).length === 3);
 
   // Reset the game.
-  resetGame = (_: any) => {
+  resetGame = () => {
     this.winner = null;
     this.state.positions = {};
     setTimeout(() => this.displayBoard = false);
