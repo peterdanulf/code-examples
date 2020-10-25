@@ -1,0 +1,21 @@
+button.square {
+  width:40px;
+  height:40px;
+}
+.X, .O {
+  position: relative;
+}
+.X:before {
+  position: absolute;
+  content: 'X';
+  font-size: 3em;
+  top: -1px;
+  left: 8px;
+}
+.O:before {
+  position: absolute;
+  content: 'O';
+  font-size: 3em;
+  top: -1px;
+  left: 6px;
+}

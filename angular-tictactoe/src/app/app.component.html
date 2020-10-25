@@ -1,0 +1,9 @@
+<div *ngIf="winner" class="status">Player {{winner}} is a winner!</div>
+<button (click)="resetGame()">Reset</button>
+<ng-container *ngIf="displayBoard">
+  <section>
+    <div class="row" *ngFor="let row of [0, 1, 2]">
+      <button (click)="move(row, col, $event)" *ngFor="let col of [1, 2, 3]" class="square"></button>
+    </div>
+  </section>
+</ng-container>
